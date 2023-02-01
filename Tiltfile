@@ -1,6 +1,6 @@
-SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='harbor-repo.vmware.com/vspheretmm/springboot-maven-source')
+SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='eu.gcr.io/tap-shared-instance/image-sources/springboot-maven-sources')
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
-NAMESPACE = os.getenv("NAMESPACE", default='default')
+NAMESPACE = os.getenv("NAMESPACE", default='my-apps')
 OUTPUT_TO_NULL_COMMAND = os.getenv("OUTPUT_TO_NULL_COMMAND", default=' > /dev/null ')
 
 k8s_custom_deploy(
@@ -22,5 +22,3 @@ k8s_custom_deploy(
 
 k8s_resource('springboot-maven', port_forwards=["8080:8080"],
     extra_pod_selectors=[{'serving.knative.dev/service': 'springboot-maven'}])
-
-allow_k8s_contexts('tap-ga')
