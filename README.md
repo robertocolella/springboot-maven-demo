@@ -13,7 +13,7 @@ Designed to illustrate how buildpacks and supply chains work to build and deploy
 ## Running on TAP
 
 ```bash
-tanzu apps workload apply springboot-maven -f workload.yaml
+tanzu apps workload apply springboot-maven --yes --tail -f workload.yaml
 ```
 
 ## Application Endpoints
