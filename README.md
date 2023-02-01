@@ -13,18 +13,7 @@ Designed to illustrate how buildpacks and supply chains work to build and deploy
 ## Running on TAP
 
 ```bash
-tanzu apps workload create springboot-maven \
-  --git-repo https://github.com/benwilcock/springboot-maven \
-  --git-branch main \
-  --type web \
-  --build-env BP_JVM_VERSION=17 \
-  --label app.kubernetes.io/part-of=springboot-maven \
-  --label apps.tanzu.vmware.com/has-tests=true \
-  --param-yaml testing_pipeline_matching_labels='{"apps.tanzu.vmware.com/pipeline":"test", "apps.tanzu.vmware.com/language":"java"}' \
-  --param-yaml testing_pipeline_params='{"source-sub-path":"."}' \
-  --annotation autoscaling.knative.dev/minScale=1 \
-  --tail \
-  --yes
+tanzu apps workload apply springboot-maven -f workload.yaml
 ```
 
 ## Application Endpoints
