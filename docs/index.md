@@ -1,4 +1,4 @@
-# SpringBoot Maven
+# Spring Boot Maven
 
 This app contains source code for a Java ([Spring](https://spring.io)) application that can be built and deployed automatically by the Tanzu Application Platform. The app includes a web page created using [Thymeleaf](https://www.thymeleaf.org/) and a basic REST API. It also includes Spring Boot Actuators and can be observed with LiveView in the TAP Portal. This application was initially created using an Accelerator for Spring Boot applications.
 
