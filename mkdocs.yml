@@ -1,4 +1,6 @@
 site_name: 'springboot-maven'
+site_description: 'A SpringBoot sample built using Maven'
+site_author: user:ben.wilcock
 
 nav:
   - About: './docs/index.md'
