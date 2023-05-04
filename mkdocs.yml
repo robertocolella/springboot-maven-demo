@@ -1,4 +1,4 @@
-# This is used to build the TechDochs for this component and is referenced here: https://github.com/benwilcock/backstage-catalogs/blob/main/system-polyglot-demo.yml
+# This is used to build the TechDocs for this component and is referenced here: https://github.com/benwilcock/backstage-catalogs/blob/main/system-polyglot-demo.yml
 site_name: 'springboot-maven'
 site_description: 'A Spring Boot sample built using Maven'
 site_author: user:ben.wilcock

@@ -7,7 +7,7 @@ Features at a glance:
 * A Spring Boot application using Maven as the build and packaging system
 * Thymeleaf to provide web page templating and a landing page for the site
 * A REST API that allows you to GET `/messages` (returns a JSON string built in `HelloController.java`)
-* Backstage TechDocs using Markdown (see `mkdocs.yml`)
+* Backstage TechDocs using Markdown (see `mkdocs.yml` and `docs/index.md`)
 
 Navigating your broswer to **http(s)://&lt;your.hosting.url&gt;:&lt;port&gt;** should show the following screen:
 
