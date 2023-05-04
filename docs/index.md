@@ -9,7 +9,7 @@ Features at a glance:
 * A REST API that allows you to GET `/messages` (returns a JSON string built in `HelloController.java`)
 * Backstage TechDocs using Markdown (see `mkdocs.yml`)
 
-Navigating your broswer to http(s)://&lt;your.hosting.url&gt;:&lt;port&gt; should show the following screen:
+Navigating your broswer to **http(s)://&lt;your.hosting.url&gt;:&lt;port&gt;** should show the following screen:
 
 ![supply chain diagram](https://github.com/benwilcock/springboot-maven/raw/main/src/main/resources/static/tap-into-prod.png "Composable and Modular - TAP Supply Chains")
 
