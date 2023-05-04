@@ -11,4 +11,4 @@ Its features include:
 
 Navigating your broswer to http(s)://&lt;your.hosting.url&gt;:&lt;port&gt; should show the following screen:
 
-![supply chain diagram](tap-into-prod.png "Composable and Modular - TAP Supply Chains")
+![supply chain diagram](../src/main/resources/static/tap-into-prod.png "Composable and Modular - TAP Supply Chains")
