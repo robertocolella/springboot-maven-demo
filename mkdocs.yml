@@ -1,4 +1,4 @@
 site_name: 'springboot-maven'
 
 nav:
-  - Home: ./docs/index.md
+  - Home: './docs/index.md'

@@ -9,6 +9,6 @@ Its features include:
 * A REST API that allows you to GET /messages (a JSON spring built in the code)
 * Backstage TechDocs using Markdown (see mkdocs.yml)
 
-Navigating your broswer to 'http(s)://<your.hosting.url>:<port>' should show the following screen:
+Navigating your broswer to http(s)://&lt;your.hosting.url&gt;:&lt;port&gt; should show the following screen:
 
-![image](https://github.com/benwilcock/springboot-maven/blob/d26fd1849fbe1c064ec9d760b56abe92dc7a8cf5/src/main/resources/static/tap-into-prod.png)
+![image](/src/main/resources/static/tap-into-prod.png)
