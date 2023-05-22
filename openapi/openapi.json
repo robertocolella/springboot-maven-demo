@@ -1,165 +1,172 @@
 {
-    "components": {},
+    "openapi": "3.0.1",
     "info": {
         "title": "OpenAPI definition",
         "version": "v0"
     },
-    "openapi": "3.0.1",
+    "servers": [
+        {
+            "url": "http://localhost:8080",
+            "description": "Generated server url"
+        }
+    ],
     "paths": {
         "/messages": {
-            "delete": {
-                "operationId": "index_5",
-                "responses": {
-                    "200": {
-                        "content": {
-                            "*/*": {
-                                "schema": {
-                                    "additionalProperties": {
-                                        "type": "string"
-                                    },
-                                    "type": "object"
-                                }
-                            }
-                        },
-                        "description": "OK"
-                    }
-                },
-                "tags": [
-                    "hello-controller"
-                ]
-            },
             "get": {
+                "tags": [
+                    "message-api-controller"
+                ],
+                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
                 "operationId": "index",
                 "responses": {
                     "200": {
+                        "description": "Messages were resolved and are being returned.",
                         "content": {
                             "*/*": {
                                 "schema": {
+                                    "type": "object",
                                     "additionalProperties": {
                                         "type": "string"
-                                    },
-                                    "type": "object"
+                                    }
                                 }
                             }
-                        },
-                        "description": "OK"
+                        }
                     }
-                },
-                "tags": [
-                    "hello-controller"
-                ]
-            },
-            "head": {
-                "operationId": "index_1",
-                "responses": {
-                    "200": {
-                        "content": {
-                            "*/*": {
-                                "schema": {
-                                    "additionalProperties": {
-                                        "type": "string"
-                                    },
-                                    "type": "object"
-                                }
-                            }
-                        },
-                        "description": "OK"
-                    }
-                },
-                "tags": [
-                    "hello-controller"
-                ]
-            },
-            "options": {
-                "operationId": "index_6",
-                "responses": {
-                    "200": {
-                        "content": {
-                            "*/*": {
-                                "schema": {
-                                    "additionalProperties": {
-                                        "type": "string"
-                                    },
-                                    "type": "object"
-                                }
-                            }
-                        },
-                        "description": "OK"
-                    }
-                },
-                "tags": [
-                    "hello-controller"
-                ]
-            },
-            "patch": {
-                "operationId": "index_4",
-                "responses": {
-                    "200": {
-                        "content": {
-                            "*/*": {
-                                "schema": {
-                                    "additionalProperties": {
-                                        "type": "string"
-                                    },
-                                    "type": "object"
-                                }
-                            }
-                        },
-                        "description": "OK"
-                    }
-                },
-                "tags": [
-                    "hello-controller"
-                ]
-            },
-            "post": {
-                "operationId": "index_2",
-                "responses": {
-                    "200": {
-                        "content": {
-                            "*/*": {
-                                "schema": {
-                                    "additionalProperties": {
-                                        "type": "string"
-                                    },
-                                    "type": "object"
-                                }
-                            }
-                        },
-                        "description": "OK"
-                    }
-                },
-                "tags": [
-                    "hello-controller"
-                ]
+                }
             },
             "put": {
+                "tags": [
+                    "message-api-controller"
+                ],
+                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
                 "operationId": "index_3",
                 "responses": {
                     "200": {
+                        "description": "Messages were resolved and are being returned.",
                         "content": {
                             "*/*": {
                                 "schema": {
+                                    "type": "object",
                                     "additionalProperties": {
                                         "type": "string"
-                                    },
-                                    "type": "object"
+                                    }
                                 }
                             }
-                        },
-                        "description": "OK"
+                        }
                     }
-                },
+                }
+            },
+            "post": {
                 "tags": [
-                    "hello-controller"
-                ]
+                    "message-api-controller"
+                ],
+                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
+                "operationId": "index_2",
+                "responses": {
+                    "200": {
+                        "description": "Messages were resolved and are being returned.",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "message-api-controller"
+                ],
+                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
+                "operationId": "index_5",
+                "responses": {
+                    "200": {
+                        "description": "Messages were resolved and are being returned.",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "options": {
+                "tags": [
+                    "message-api-controller"
+                ],
+                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
+                "operationId": "index_6",
+                "responses": {
+                    "200": {
+                        "description": "Messages were resolved and are being returned.",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "head": {
+                "tags": [
+                    "message-api-controller"
+                ],
+                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
+                "operationId": "index_1",
+                "responses": {
+                    "200": {
+                        "description": "Messages were resolved and are being returned.",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "message-api-controller"
+                ],
+                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
+                "operationId": "index_4",
+                "responses": {
+                    "200": {
+                        "description": "Messages were resolved and are being returned.",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     },
-    "servers": [
-        {
-            "description": "Generated server url",
-            "url": "http://localhost:8080"
-        }
-    ]
+    "components": {}
 }
