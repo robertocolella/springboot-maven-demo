@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.HashMap;
@@ -29,6 +30,7 @@ public class HelloController {
     @Value("${msg_body:Message Body Text Here.}")
 	String msgBody;
 
+	@CrossOrigin
 	@RequestMapping("/messages")
 	public Map<String, String> index() {
 		LOG.info("A request has been received for the /messages endpoint.");
