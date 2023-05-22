@@ -11,9 +11,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-public class HelloController {
+public class MessageApiController {
 
-	private static final Logger LOG = LoggerFactory.getLogger(HelloController.class);
+	private static final Logger LOG = LoggerFactory.getLogger(MessageApiController.class);
 
     @Value("${configfrom:Hardcoded}")
 	String configfrom;
