@@ -1,6 +1,11 @@
 package com.vmware.springbootmaven;
 
 import org.springframework.web.bind.annotation.RestController;
+
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -31,6 +36,10 @@ public class MessageApiController {
 	String msgBody;
 
 	@CrossOrigin
+	@Operation(summary = "Get a list of messages. These could come from a number or different configuration sources.")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "200", description = "Messages were resolved and are being returned.")
+	})
 	@RequestMapping("/messages")
 	public Map<String, String> index() {
 		LOG.info("A request has been received for the /messages endpoint.");
