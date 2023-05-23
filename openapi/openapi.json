@@ -1,13 +1,24 @@
 {
     "openapi": "3.0.1",
     "info": {
-        "title": "OpenAPI definition",
-        "version": "v0"
+        "title": "Messages API",
+        "description": "Sample API for messages",
+        "version": "0.1-SNAPSHOT"
     },
     "servers": [
         {
+            "url": "https://springboot-maven-polyglot-demo.tap-next.blah.cloud",
+            "description": "TAP"
+        },
+        {
             "url": "http://localhost:8080",
-            "description": "Generated server url"
+            "description": "localhost"
+        }
+    ],
+    "tags": [
+        {
+            "name": "Springboot-Maven Messages API",
+            "description": "Sample API for messages"
         }
     ],
     "paths": {
@@ -16,140 +27,8 @@
                 "tags": [
                     "message-api-controller"
                 ],
-                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
+                "summary": "Get a list of messages. The content in these messages could come from a number or different configuration sources.",
                 "operationId": "index",
-                "responses": {
-                    "200": {
-                        "description": "Messages were resolved and are being returned.",
-                        "content": {
-                            "*/*": {
-                                "schema": {
-                                    "type": "object",
-                                    "additionalProperties": {
-                                        "type": "string"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "put": {
-                "tags": [
-                    "message-api-controller"
-                ],
-                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
-                "operationId": "index_3",
-                "responses": {
-                    "200": {
-                        "description": "Messages were resolved and are being returned.",
-                        "content": {
-                            "*/*": {
-                                "schema": {
-                                    "type": "object",
-                                    "additionalProperties": {
-                                        "type": "string"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "post": {
-                "tags": [
-                    "message-api-controller"
-                ],
-                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
-                "operationId": "index_2",
-                "responses": {
-                    "200": {
-                        "description": "Messages were resolved and are being returned.",
-                        "content": {
-                            "*/*": {
-                                "schema": {
-                                    "type": "object",
-                                    "additionalProperties": {
-                                        "type": "string"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "delete": {
-                "tags": [
-                    "message-api-controller"
-                ],
-                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
-                "operationId": "index_5",
-                "responses": {
-                    "200": {
-                        "description": "Messages were resolved and are being returned.",
-                        "content": {
-                            "*/*": {
-                                "schema": {
-                                    "type": "object",
-                                    "additionalProperties": {
-                                        "type": "string"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "options": {
-                "tags": [
-                    "message-api-controller"
-                ],
-                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
-                "operationId": "index_6",
-                "responses": {
-                    "200": {
-                        "description": "Messages were resolved and are being returned.",
-                        "content": {
-                            "*/*": {
-                                "schema": {
-                                    "type": "object",
-                                    "additionalProperties": {
-                                        "type": "string"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "head": {
-                "tags": [
-                    "message-api-controller"
-                ],
-                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
-                "operationId": "index_1",
-                "responses": {
-                    "200": {
-                        "description": "Messages were resolved and are being returned.",
-                        "content": {
-                            "*/*": {
-                                "schema": {
-                                    "type": "object",
-                                    "additionalProperties": {
-                                        "type": "string"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "patch": {
-                "tags": [
-                    "message-api-controller"
-                ],
-                "summary": "Get a list of messages. These could come from a number or different configuration sources.",
-                "operationId": "index_4",
                 "responses": {
                     "200": {
                         "description": "Messages were resolved and are being returned.",
