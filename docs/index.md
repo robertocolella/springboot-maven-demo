@@ -41,3 +41,15 @@ client: "VMware"
 ```
 
 The homepage will then use the new name of the client in the text at the bottom of the page.
+
+## Generating API Documentation
+
+This project features [SpringDoc](https://springdoc.org/). This means that the `/messages` REST API can be documented using OpenAPI.
+
+To generate the documentation:
+
+```bash
+./mvnw clean verify
+```
+
+The documentation will be generated into the file `./openapi/openapi.json`. This file should be checked in with the source code so that it can be referenced by Backstage catalog API entities.

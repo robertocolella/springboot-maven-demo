@@ -56,3 +56,15 @@ Upgrade the Snake YAML dependency manually by adding this to the `POM.xml` file.
 			<version>1.32</version>
 		</dependency>
 ```
+
+## Generating The API Documentation
+
+This project features [SpringDoc](https://springdoc.org/). This means that the `/messages` REST API can be documented using OpenAPI.
+
+To Generate the documentation:
+
+```bash
+./mvnw clean verify
+```
+
+The documentation will be generated into the file `./openapi/openapi.json`. This file should be checked in with the source code so that it can be referenced by Backstage catalog API entities.
