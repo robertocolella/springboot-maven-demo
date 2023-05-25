@@ -3,7 +3,7 @@ package com.vmware.springbootmaven;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.v3.oas.annotations.Operation;
-
+import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
@@ -37,9 +37,13 @@ public class MessageApiController {
 	String msgBody;
 
 	@CrossOrigin
-	@Operation(summary = "Get a list of messages. The content in these messages could come from a number or different configuration sources.")
+	@Operation(summary = "Get a list of messages.",
+	        description = "The API returns a list of messages. The content in these messages could come from a number or different configuration sources.",
+			tags = {"Messages"})
 	@ApiResponses(value = {
-			@ApiResponse(responseCode = "200", description = "Messages were resolved and are being returned.")
+			@ApiResponse(responseCode = "200", 
+			             description = "Messages were resolved and are being returned.",
+						 content = @Content(mediaType = "application/json"))
 	})
 	@GetMapping("/messages")
 	public Map<String, String> index() {

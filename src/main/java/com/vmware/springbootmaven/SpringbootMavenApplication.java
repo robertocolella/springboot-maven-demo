@@ -9,8 +9,10 @@ import io.swagger.v3.oas.annotations.servers.Server;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 @OpenAPIDefinition( 
-	tags = {@Tag(name = "Springboot-Maven Messages API", description = "Sample API for messages")},
-    info = @Info(title = "Messages API", version = "0.1-SNAPSHOT", description = "Sample API for messages"),
+	tags = {@Tag(name = "Springboot-Maven Messages API", 
+                 description = "An API for obtaining a list of messages")},
+    info = @Info(title = "Messages API", version = "0.1-SNAPSHOT", 
+                 description = "A simple Messages API designed to return a list of messages that can originate from inside the code or the configuration."),
     servers = {
        @Server(url = "https://springboot-maven-polyglot-demo.tap-next.blah.cloud", description = "TAP"),
        @Server(url = "http://localhost:8080", description = "localhost")

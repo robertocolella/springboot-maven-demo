@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "Messages API",
-        "description": "Sample API for messages",
+        "description": "A simple Messages API designed to return a list of messages that can originate from inside the code or the configuration.",
         "version": "0.1-SNAPSHOT"
     },
     "servers": [
@@ -18,29 +18,23 @@
     "tags": [
         {
             "name": "Springboot-Maven Messages API",
-            "description": "Sample API for messages"
+            "description": "An API for obtaining a list of messages"
         }
     ],
     "paths": {
         "/messages": {
             "get": {
                 "tags": [
-                    "message-api-controller"
+                    "Messages"
                 ],
-                "summary": "Get a list of messages. The content in these messages could come from a number or different configuration sources.",
+                "summary": "Get a list of messages.",
+                "description": "The API returns a list of messages. The content in these messages could come from a number or different configuration sources.",
                 "operationId": "index",
                 "responses": {
                     "200": {
                         "description": "Messages were resolved and are being returned.",
                         "content": {
-                            "*/*": {
-                                "schema": {
-                                    "type": "object",
-                                    "additionalProperties": {
-                                        "type": "string"
-                                    }
-                                }
-                            }
+                            "application/json": {}
                         }
                     }
                 }
