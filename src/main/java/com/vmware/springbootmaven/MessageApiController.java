@@ -10,6 +10,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -46,7 +47,7 @@ public class MessageApiController {
 						 content = @Content(mediaType = "application/json"))
 	})
 	@GetMapping("/messages")
-	public Map<String, String> index() {
+	public ResponseEntity<Map<String, String>> index() {
 		LOG.info("A request has been received for the /messages endpoint.");
 		LOG.debug("Config is coming from {}", configfrom);
 		Map<String, String> data = new HashMap<String, String>();
@@ -55,6 +56,6 @@ public class MessageApiController {
 		data.put("framework", framework);
 		data.put("client", client);
 		LOG.debug("Returning {}.", data.toString());
-		return data;
+		return ResponseEntity.ok(data) ;
 	}
 }
