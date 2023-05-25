@@ -29,7 +29,7 @@
                 ],
                 "summary": "Get a list of messages.",
                 "description": "The API returns a list of messages. The content in these messages could come from a number or different configuration sources.",
-                "operationId": "index",
+                "operationId": "messages",
                 "responses": {
                     "200": {
                         "description": "Messages were resolved and are being returned.",
@@ -37,6 +37,7 @@
                             "application/json": {
                                 "schema": {
                                     "type": "map",
+                                    "description": "A map of messages and their subjects.",
                                     "example": {
                                         "subject a": "message",
                                         "subject b": "message"

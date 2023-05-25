@@ -45,10 +45,10 @@ public class MessageApiController {
 	@ApiResponses(value = {
 			@ApiResponse(responseCode = "200", 
 			             description = "Messages were resolved and are being returned.",
-						 content = @Content(schema = @Schema(type = "map", example = "{\"subject a\": \"message\",\"subject b\": \"message\"}")))
+						 content = @Content(schema = @Schema(name = "messages", description = "A map of messages and their subjects.", type = "map", example = "{\"subject a\": \"message\",\"subject b\": \"message\"}")))
 	})
 	@GetMapping(value = "/messages", produces = {"application/json"})
-	public ResponseEntity<Map<String, String>> index() {
+	public ResponseEntity<Map<String, String>> messages() {
 		LOG.info("A request has been received for the /messages endpoint.");
 		LOG.debug("Config is coming from {}", configfrom);
 		Map<String, String> data = new HashMap<String, String>();
