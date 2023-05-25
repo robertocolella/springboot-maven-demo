@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
@@ -44,9 +45,9 @@ public class MessageApiController {
 	@ApiResponses(value = {
 			@ApiResponse(responseCode = "200", 
 			             description = "Messages were resolved and are being returned.",
-						 content = @Content(mediaType = "application/json"))
+						 content = @Content(schema = @Schema(type = "map", example = "{\"subject a\": \"message\",\"subject b\": \"message\"}")))
 	})
-	@GetMapping("/messages")
+	@GetMapping(value = "/messages", produces = {"application/json"})
 	public ResponseEntity<Map<String, String>> index() {
 		LOG.info("A request has been received for the /messages endpoint.");
 		LOG.debug("Config is coming from {}", configfrom);
@@ -55,6 +56,7 @@ public class MessageApiController {
 		data.put("msg_body", msgBody);
 		data.put("framework", framework);
 		data.put("client", client);
+		data.put("config_from", configfrom);
 		LOG.debug("Returning {}.", data.toString());
 		return ResponseEntity.ok(data) ;
 	}

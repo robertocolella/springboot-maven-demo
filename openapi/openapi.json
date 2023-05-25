@@ -34,7 +34,15 @@
                     "200": {
                         "description": "Messages were resolved and are being returned.",
                         "content": {
-                            "application/json": {}
+                            "application/json": {
+                                "schema": {
+                                    "type": "map",
+                                    "example": {
+                                        "subject a": "message",
+                                        "subject b": "message"
+                                    }
+                                }
+                            }
                         }
                     }
                 }
