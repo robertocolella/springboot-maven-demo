@@ -13,10 +13,6 @@
         {
             "url": "https://node-express-polyglot-demo.tap-next.blah.cloud",
             "description": "NodeJS"
-        },
-        {
-            "url": "http://localhost:8080",
-            "description": "Local"
         }
     ],
     "tags": [
