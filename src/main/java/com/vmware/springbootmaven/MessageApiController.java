@@ -14,14 +14,18 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.HashMap;
 import java.util.Map;
 
 @RestController
+@RequestMapping(MessageApiController.BASE_URI)
 public class MessageApiController {
 
 	private static final Logger LOG = LoggerFactory.getLogger(MessageApiController.class);
+
+	static final String BASE_URI = "/api";
 
 	@Value("${configfrom:Hardcoded}")
 	String configfrom;

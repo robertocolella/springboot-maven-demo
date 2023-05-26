@@ -7,12 +7,16 @@
     },
     "servers": [
         {
-            "url": "https://springboot-maven-polyglot-demo.tap-next.blah.cloud",
-            "description": "TAP"
+            "url": "https://springboot-maven-polyglot-demo.tap-next.blah.cloud/api",
+            "description": "Spring"
         },
         {
-            "url": "http://localhost:8080",
-            "description": "localhost"
+            "url": "https://node-express-polyglot-demo.tap-next.blah.cloud/api",
+            "description": "NodeJS"
+        },
+        {
+            "url": "http://localhost:8080/api",
+            "description": "Local"
         }
     ],
     "tags": [
@@ -22,7 +26,7 @@
         }
     ],
     "paths": {
-        "/messages": {
+        "/api/messages": {
             "get": {
                 "tags": [
                     "Messages"
