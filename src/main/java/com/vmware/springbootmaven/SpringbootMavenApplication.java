@@ -15,8 +15,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
                  description = "A simple Messages API designed to return a list of messages that can originate from inside the code or the configuration."),
     servers = {
        @Server(url = "https://springboot-maven-polyglot-demo.tap-next.blah.cloud", description = "Spring"),
-       @Server(url = "https://node-express-polyglot-demo.tap-next.blah.cloud", description = "NodeJS"),
-       @Server(url = "http://localhost:8080", description = "Local")
+       @Server(url = "https://node-express-polyglot-demo.tap-next.blah.cloud", description = "NodeJS")
     }
 ) 
 
