@@ -7,15 +7,15 @@
     },
     "servers": [
         {
-            "url": "https://springboot-maven-polyglot-demo.tap-next.blah.cloud/api",
+            "url": "https://springboot-maven-polyglot-demo.tap-next.blah.cloud",
             "description": "Spring"
         },
         {
-            "url": "https://node-express-polyglot-demo.tap-next.blah.cloud/api",
+            "url": "https://node-express-polyglot-demo.tap-next.blah.cloud",
             "description": "NodeJS"
         },
         {
-            "url": "http://localhost:8080/api",
+            "url": "http://localhost:8080",
             "description": "Local"
         }
     ],
