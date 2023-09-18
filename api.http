@@ -1,0 +1,8 @@
+###
+# Get 
+GET https://springboot-maven.polyglot-demo.tap-next.blah.cloud/api/messages
+
+###
+# Get 
+GET https://springboot-maven.polyglot-demo.tap-next.blah.cloud/v3/api-docs
+

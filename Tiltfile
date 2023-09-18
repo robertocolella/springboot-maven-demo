@@ -1,6 +1,6 @@
 SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='eu.gcr.io/tap-shared-instance/image-sources/springboot-maven-sources')
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
-NAMESPACE = os.getenv("NAMESPACE", default='my-apps')
+NAMESPACE = os.getenv("NAMESPACE", default='polyglot-demo')
 OUTPUT_TO_NULL_COMMAND = os.getenv("OUTPUT_TO_NULL_COMMAND", default=' > /dev/null ')
 
 k8s_custom_deploy(
