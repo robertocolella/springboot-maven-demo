@@ -1,0 +1,19 @@
+# This component is already included in the 'Polyglot Demo' system here: https://github.com/benwilcock/backstage-catalogs/blob/main/system-polyglot-demo.yml
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: springboot-maven
+  description: Spring Boot With Maven
+  tags:
+    - java
+    - spring
+    - web
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=springboot-maven'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
+

@@ -18,11 +18,6 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### DotNet ###
-bin/
-obj/
-publish/
-
 ### STS/Eclipse ###
 .apt_generated
 .classpath
@@ -34,12 +29,11 @@ publish/
 
 ### VS Code ###
 .vscode/
+*.code-workspace
 
-### Visual Studio ###
-.vs/
-
-### JetBrains ###
-.idea
+### IntelliJ IDEA ###
+.idea/
+out/
 *.iws
 *.iml
 *.ipr
@@ -58,4 +52,4 @@ build/
 Tiltfile
 
 ### Accelerator ###
-accelerator-log.md 
+accelerator-log.md

@@ -42,7 +42,7 @@ public class MessageApiController {
 	@Value("${msg_body:Message Body Text Here.}")
 	String msgBody;
 
-	@CrossOrigin
+	@CrossOrigin()
 	@Operation(summary = "Get a list of messages.",
 	        description = "The API returns a list of messages. The content in these messages could come from a number or different configuration sources.",
 			tags = {"Messages"})
@@ -59,6 +59,7 @@ public class MessageApiController {
 		data.put("msg_subject", msgSubject);
 		data.put("msg_body", msgBody);
 		data.put("framework", framework);
+		data.put("extra_message", "extra message");
 		data.put("client", client);
 		data.put("config_from", configfrom);
 		LOG.debug("Returning {}.", data.toString());
