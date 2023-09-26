@@ -59,7 +59,7 @@ public class MessageApiController {
 		data.put("msg_subject", msgSubject);
 		data.put("msg_body", msgBody);
 		data.put("framework", framework);
-		data.put("extra_message", "extra message");
+		// data.put("extra_message", "extra message");
 		data.put("client", client);
 		data.put("config_from", configfrom);
 		LOG.debug("Returning {}.", data.toString());
