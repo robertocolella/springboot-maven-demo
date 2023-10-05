@@ -3,7 +3,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: springboot-maven
+  name: springboot-maven-demo
   description: Spring Boot With Maven
   tags:
     - java
@@ -11,7 +11,7 @@ metadata:
     - web
     - tanzu
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=springboot-maven'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=springboot-maven-demo'
 spec:
   type: service
   lifecycle: experimental
